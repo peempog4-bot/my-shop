@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <title>น้ำท่อมปั่น | Premium Store</title>
+  <meta charset="UTF-8">
+  <title>น้ำท่อมปั่น</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
 
-<header class="header">
-  <div class="logo">🍃 น้ำท่อมปั่น</div>
-  <div class="cart-icon" onclick="openCart()">
-    🛒 <span id="cart-count">0</span>
-  </div>
+<header class="navbar">
+  <h1>น้ำท่อมปั่น</h1>
+  <span class="tagline">ดิบ • คลีน • พรีเมียม</span>
 </header>
 
-<section class="hero">
-  <h1>ร้านน้ำท่อมปั่น</h1>
-  <p>ดิบ • คลีน • พรีเมียม</p>
-</section>
+<main class="container">
+  <section class="product-grid">
 
-<section class="products" id="product-list">
-  <!-- สินค้าจะถูกสร้างจาก JS -->
-</section>
+    <div class="product-card">
+      <img src="images/namthom-boran.png" alt="น้ำท่อมโบราณ">
+      <h2>น้ำท่อมโบราณ ทำเมื่อวาน</h2>
+      <p class="price">฿120 / แก้ว</p>
 
-<!-- popup ตะกร้า -->
-<div class="cart-popup" id="cart-popup">
-  <div class="cart-box">
-    <h2>ตะกร้าสินค้า</h2>
-    <div id="cart-items"></div>
-    <div class="cart-total">
-      รวมทั้งหมด: <span id="total-price">0</span> บาท
+      <button class="buy-btn">
+        เพิ่มลงตะกร้า
+      </button>
     </div>
-    <button onclick="goCheckout()">ยืนยันคำสั่งซื้อ</button>
-    <button class="close" onclick="closeCart()">ปิด</button>
-  </div>
-</div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 ร้านน้ำท่อมปั่น</p>
+</footer>
 
 </body>
 </html>
